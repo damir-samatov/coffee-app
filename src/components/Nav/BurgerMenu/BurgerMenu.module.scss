@@ -16,10 +16,14 @@
     }
 }
 .burgerMenu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     color: $fontDark;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
+    padding: 2vh 0;
     top: 0;
     left: 0;
     transform: translateX(-100%);
@@ -33,34 +37,34 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem 0;
 }
 .logo {
-    width: 8rem;
+    width: 12rem;
 }
 .buttonClose {
-    width: 1.5rem;
+    width: 2.5rem;
 }
 .textLink {
-    padding: 1rem;
-}
-.textLinks {
-    margin: 3rem 0 0 3rem;
+    font-size: 1.5rem;
+    padding: 1em;
+    margin-left: 15%;
+    width: fit-content;
+    margin-top: 0.5em;
 }
 .iconLinks {
     display: flex;
-    margin: 0 0 0 3rem;
 }
 .iconLink {
+    font-size: 1.5rem;
+    padding: 1em;
+    margin-left: 15%;
     margin-top: 1rem;
-    width: 3.2rem;
-    padding: 1rem;
     & + & {
         margin-left: 1.25rem;
     }
 }
 .socialLinks {
-    margin-top: 3rem;
+    margin: 5vh 0;
 }
 .socialLinksContainer {
     margin-top: 1rem;
@@ -71,7 +75,7 @@
     padding: 1rem;
 }
 .socialLinkText {
+    font-size: 1.5rem;
     text-align: center;
-    font-size: 1.2rem;
     font-weight: 700;
 }
