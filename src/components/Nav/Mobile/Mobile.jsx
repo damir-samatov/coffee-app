@@ -12,31 +12,29 @@ export default function NavMobile() {
     const [searchInputShown, setSearchInputShown] = useState(false);
     return (
         <nav className={s.nav}>
-            <div className={`${s.navContainer} container`}>
-                <button
-                    className={s.button}
-                    onClick={() => setBurgerMenuShown(true)}
-                >
-                    <img src={burgerIcon} alt="burger button" />
+            <button
+                className={s.button}
+                onClick={() => setBurgerMenuShown(true)}
+            >
+                <img src={burgerIcon} alt="burger button" />
+            </button>
+            <div className={s.logo}>
+                <img src={logoIcon} alt="logo" />
+            </div>
+            <div className={s.iconLinks}>
+                <button className={s.iconLink} href="#">
+                    <img
+                        src={searchIcon}
+                        alt=""
+                        onClick={() => setSearchInputShown(true)}
+                    />
                 </button>
-                <div className={s.logo}>
-                    <img src={logoIcon} alt="logo" />
-                </div>
-                <div className={s.iconLinks}>
-                    <button className={s.iconLink} href="#">
-                        <img
-                            src={searchIcon}
-                            alt=""
-                            onClick={() => setSearchInputShown(true)}
-                        />
-                    </button>
-                    <a className={s.iconLink} href="#">
-                        <img src={busketIcon} alt="busket icon" />
-                    </a>
-                    <a className={s.iconLink} href="#">
-                        <img src={personIcon} alt="person icon" />
-                    </a>
-                </div>
+                <a className={s.iconLink} href="#">
+                    <img src={busketIcon} alt="busket icon" />
+                </a>
+                <a className={s.iconLink} href="#">
+                    <img src={personIcon} alt="person icon" />
+                </a>
             </div>
             {searchInputShown && (
                 <SearchMobile setSearchInputShown={setSearchInputShown} />

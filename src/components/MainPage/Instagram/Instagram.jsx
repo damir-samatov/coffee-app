@@ -23,7 +23,7 @@ export default function Instagram() {
                         {
                             resolve: slidesToShowPlugin,
                             options: {
-                                numberOfSlides: 5,
+                                numberOfSlides: 6,
                             },
                         },
                     ]}

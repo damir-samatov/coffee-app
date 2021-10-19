@@ -13,6 +13,7 @@
     }
 }
 .searchMobile {
+    font-size: 1.25rem;
     width: 100%;
     height: 100vh;
     position: fixed;
@@ -26,6 +27,7 @@
     animation: inputClose 250ms ease forwards;
 }
 .inputArea {
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     position: relative;
@@ -49,7 +51,6 @@
 }
 .buttonClose {
     margin: 2rem 2rem 2rem 0.75rem;
-    font-size: 0.8rem;
     width: object-fit;
     color: $primary;
 }

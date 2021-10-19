@@ -2,10 +2,11 @@
 
 .nav {
     display: block;
-    z-index: 10;
-    position: sticky;
-    top: 0;
+    position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
     background-color: $void;
     box-shadow: $shadow;
     @media (max-width: 768px) {

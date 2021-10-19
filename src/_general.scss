@@ -6,33 +6,36 @@
     color: inherit;
     box-sizing: border-box;
 }
+
 html {
     color: $fontDark;
     font-size: 20px;
-    @media (max-width: 1920px) {
-        font-size: 16px;
+    @media (max-width: 1960px) {
+        font-size: 18px;
     }
     @media (max-width: 1366px) {
+        font-size: 16px;
+    }
+    @media (max-width: 768px) {
         font-size: 14px;
     }
-    @media (max-width: 420px) {
+    @media (max-width: 384px) {
         font-size: 12px;
     }
-    @media (max-width: 350px) {
-        font-size: 12px;
-    }
-    overflow-x: hidden;
 }
 .wrapper {
+    overflow: hidden;
     width: 100%;
     min-height: 100vh;
-    overflow-x: hidden;
 }
 .container {
     width: 100%;
     max-width: 90rem;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
+    @media (max-width: 767px) {
+        padding: 0 1rem;
+    }
 }
 ::-webkit-scrollbar {
     width: 0.5vw;
