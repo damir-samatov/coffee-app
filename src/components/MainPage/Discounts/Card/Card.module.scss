@@ -1,0 +1,102 @@
+@import "components/variables";
+
+.card {
+    position: absolute;
+    margin: 2rem auto;
+    position: relative;
+    width: 20rem;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    border-radius: 1rem;
+    background-color: $void;
+    box-shadow: $shadow;
+    @media (max-width: 768px) {
+        min-width: 18rem;
+        max-width: 20rem;
+        width: 100%;
+    }
+    @media (max-width: 420px) {
+        min-width: 20rem;
+        width: 75%;
+    }
+}
+.select {
+    display: block;
+    margin-left: auto;
+    font-size: 1rem;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    background-color: $secondary;
+    outline: none;
+}
+.option {
+    background-color: $secondary;
+    border: none;
+    outline: none;
+}
+.badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(50%, -50%);
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: $primary;
+    h3 {
+        font-weight: 900;
+        font-size: 2rem;
+        color: $fontDark;
+    }
+}
+.sales {
+    margin-top: 1rem;
+}
+.content {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.image {
+    width: 45%;
+}
+.details {
+    width: 45%;
+}
+.title {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 900;
+}
+.paragraph {
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+.buy {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.price {
+    font-size: 1.5rem;
+    width: 50%;
+    text-align: center;
+}
+.button {
+    @include button;
+    width: 50%;
+    padding: 0.75rem;
+}
+.stars {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.star {
+    width: 18%;
+}

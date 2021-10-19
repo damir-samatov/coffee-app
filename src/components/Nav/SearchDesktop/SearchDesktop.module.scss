@@ -1,0 +1,19 @@
+@import "components/variables";
+.searchDesktop {
+    position: absolute;
+    width: 110%;
+    top: -0.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+    padding: 0 2rem;
+    background-color: $void;
+    box-shadow: $shadow;
+}
+.input {
+    display: block;
+    padding: 0.35rem 0;
+    width: 100%;
+    margin: 0 auto;
+    border: none;
+}

@@ -1,0 +1,77 @@
+@import "components/variables";
+@keyframes burgerOpen {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+@keyframes burgerClose {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.burgerMenu {
+    color: $fontDark;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    background-color: $void;
+    animation: burgerOpen 250ms ease forwards;
+}
+.close {
+    animation: burgerClose 250ms ease forwards;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+}
+.logo {
+    width: 8rem;
+}
+.buttonClose {
+    width: 1.5rem;
+}
+.textLink {
+    padding: 1rem;
+}
+.textLinks {
+    margin: 3rem 0 0 3rem;
+}
+.iconLinks {
+    display: flex;
+    margin: 0 0 0 3rem;
+}
+.iconLink {
+    margin-top: 1rem;
+    width: 3.2rem;
+    padding: 1rem;
+    & + & {
+        margin-left: 1.25rem;
+    }
+}
+.socialLinks {
+    margin-top: 3rem;
+}
+.socialLinksContainer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.socialLink {
+    padding: 1rem;
+}
+.socialLinkText {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}

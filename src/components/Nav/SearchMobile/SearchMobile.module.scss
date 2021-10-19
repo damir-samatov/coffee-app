@@ -1,0 +1,62 @@
+@import "components/variables";
+@keyframes inputOpen {
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes inputClose {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+.searchMobile {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $void;
+    transform: translateY(-100%);
+    animation: inputOpen 250ms ease forwards;
+}
+.close {
+    animation: inputClose 250ms ease forwards;
+}
+.inputArea {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.searchIcon {
+    position: absolute;
+    opacity: 0.25;
+    width: 0.8rem;
+    height: 0.8rem;
+    top: 50%;
+    left: 3.5rem;
+    transform: translate(-50%, -50%);
+}
+.input {
+    width: 100%;
+    padding: 0.35rem 1rem 0.35rem 3rem;
+    margin: 2rem 0.75rem 2rem 2rem;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: $shadow;
+}
+.buttonClose {
+    margin: 2rem 2rem 2rem 0.75rem;
+    font-size: 0.8rem;
+    width: object-fit;
+    color: $primary;
+}
+.items {
+    margin: 0 auto;
+    margin: 0 2.5rem;
+}
+.item {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,14 @@
+@import "components/variables";
+
+.mainPage {
+    position: relative;
+    background: url(./assets/bg_shape3.png), url(./assets/bg_shape.svg),
+        url(./assets/bg_shape2.svg);
+    background-position: 0 25%, top right, 0 20%;
+    background-size: 10%, 20%, 10%;
+    background-repeat: no-repeat;
+    @media (max-width: 1920px) {
+        background-size: 20%, 30%, 20%;
+    }
+    z-index: 1;
+}

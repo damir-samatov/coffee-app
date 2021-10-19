@@ -1,0 +1,58 @@
+@import "components/variables";
+.card {
+    display: flex;
+    height: auto;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: $void;
+    box-shadow: $shadow;
+    @media (max-width: 1080px) {
+        height: 100%;
+        display: block;
+        max-width: 40rem;
+        width: 90%;
+        margin: 1rem auto;
+    }
+}
+.image {
+    background-color: rgba(129, 105, 194, 0.336);
+    width: 35%;
+    img {
+        object-fit: cover;
+        object-position: center;
+    }
+    @media (max-width: 1080px) {
+        width: 100%;
+        aspect-ratio: 1/0.35;
+    }
+}
+.info {
+    padding: 2rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: 1080px) {
+        width: 100%;
+    }
+}
+.title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.paragraph {
+    margin-top: 2rem;
+    line-height: 1.25;
+}
+.button {
+    @include button;
+    margin-top: 2rem;
+    background-color: $void;
+    color: $primary;
+    @media (max-width: 1080px) {
+        width: 100%;
+    }
+}

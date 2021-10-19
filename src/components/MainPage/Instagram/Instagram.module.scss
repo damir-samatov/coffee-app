@@ -1,0 +1,71 @@
+@import "components/variables";
+.instagram {
+    padding: 4rem 0;
+    background-image: linear-gradient($secondary 50%, $primary 50%);
+}
+.flexHeading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.heading {
+    @include sectionHeading;
+}
+.instagramIcon {
+    margin-left: 2rem;
+    width: 4rem;
+}
+
+.slider {
+    padding: 4rem 0;
+    position: relative;
+}
+.carousel {
+    z-index: 2;
+    position: relative;
+}
+.slide {
+    width: 100%;
+    aspect-ratio: 1/2;
+}
+.image {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #e9e9e9;
+
+    box-shadow: $shadow;
+    border-radius: 1rem;
+    & + & {
+        margin-top: 20px;
+    }
+}
+
+.phones {
+    padding: 1rem 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+}
+.phone1 {
+    width: 100%;
+    height: 100%;
+    img {
+        object-fit: contain;
+        object-position: left;
+    }
+}
+.phone2 {
+    width: 100%;
+    height: 100%;
+    img {
+        object-fit: contain;
+        object-position: left;
+    }
+    padding: 10% 0 0 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

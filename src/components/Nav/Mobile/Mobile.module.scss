@@ -1,0 +1,41 @@
+@import "components/variables";
+.nav {
+    display: none;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: $void;
+    box-shadow: $shadow;
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
+}
+.logo {
+    width: 8rem;
+    margin: 0 auto 0 0.5rem;
+}
+.iconLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 30%;
+    margin-left: auto;
+}
+.textLink {
+    font-size: 1.2rem;
+}
+.iconLink {
+    width: 1.2rem;
+}

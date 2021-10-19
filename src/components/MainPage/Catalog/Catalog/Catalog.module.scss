@@ -1,0 +1,12 @@
+@import "components/variables";
+
+.catalog {
+    padding: 4rem 0;
+}
+.catalogContainer {
+    padding: 0;
+    overflow: visible;
+}
+.heading {
+    @include sectionHeading;
+}

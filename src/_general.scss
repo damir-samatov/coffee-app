@@ -1,0 +1,40 @@
+@import "components/variables";
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: inherit;
+    box-sizing: border-box;
+}
+html {
+    color: $fontDark;
+    font-size: 20px;
+    @media (max-width: 1920px) {
+        font-size: 16px;
+    }
+    @media (max-width: 1366px) {
+        font-size: 14px;
+    }
+    @media (max-width: 420px) {
+        font-size: 12px;
+    }
+    overflow-x: hidden;
+}
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.container {
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+::-webkit-scrollbar {
+    width: 0.5vw;
+    background-color: $secondary;
+    &-thumb {
+        background-color: $primary;
+    }
+}

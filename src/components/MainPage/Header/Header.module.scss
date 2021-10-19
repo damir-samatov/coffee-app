@@ -1,0 +1,49 @@
+@import "components/variables";
+
+.header {
+    padding: 4rem 0;
+}
+.headerContainer {
+    position: relative;
+}
+.heading {
+    font-size: 3rem;
+    line-height: 2.5rem;
+    font-weight: 900;
+    @media (max-width: 768px) {
+        font-size: 2.25rem;
+        max-width: 22rem;
+    }
+}
+.paragraph {
+    margin-top: 3rem;
+    max-width: 28rem;
+    @media (max-width: 768px) {
+        max-width: 18rem;
+    }
+    & + & {
+        max-width: 24rem;
+        @media (max-width: 768px) {
+            max-width: 13rem;
+        }
+    }
+}
+.cup,
+.beans {
+    z-index: -1;
+    top: 120%;
+    left: 75%;
+    width: 30rem;
+    transform: translate(-50%, -100%);
+    position: absolute;
+}
+.cup {
+    padding: 0rem 2rem 4rem 2rem;
+}
+.button {
+    @include button;
+    margin-top: 3rem;
+    @media (max-width: 450px) {
+        width: 100%;
+    }
+}

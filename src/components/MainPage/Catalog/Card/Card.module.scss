@@ -1,0 +1,65 @@
+@import "components/variables";
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem 0;
+    padding: 0rem 1rem 2rem 1rem;
+    border-radius: 1rem;
+    background-color: $void;
+    min-width: none;
+    width: 22.5%;
+    box-shadow: $shadow;
+    @media (max-width: 1000px) {
+        min-width: 24rem;
+    }
+    @media (max-width: 768px) {
+        min-width: 20rem;
+    }
+    @media (max-width: 470px) {
+        min-width: 18rem;
+    }
+    &:hover {
+        & > .image,
+        & > .name {
+            transform: translateY(0rem);
+        }
+        & > .button {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.image {
+    transition: transform 250ms ease;
+    transform: translateY(3rem);
+    width: 60%;
+    aspect-ratio: 1/1.25;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img {
+        object-fit: contain;
+    }
+}
+.name {
+    transition: transform 250ms ease;
+    transform: translateY(3rem);
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.button {
+    @include button;
+    width: 80%;
+    margin: 3rem auto 0 auto;
+    padding: 1em 0;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}

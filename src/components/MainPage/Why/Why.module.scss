@@ -1,0 +1,67 @@
+@import "components/variables";
+
+.heading {
+    @include sectionHeading;
+    text-align: right;
+    width: 100%;
+    @media (max-width: 768px) {
+        text-align: left;
+    }
+}
+.why {
+    padding: 3rem 0;
+    background: url(./assets/wave.svg), $secondary;
+    background-repeat: no-repeat;
+}
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+.images {
+    position: relative;
+    width: 45%;
+    padding: 5rem 0;
+    @media (max-width: 768px) {
+        display: none;
+    }
+}
+.info {
+    width: 50%;
+    @media (max-width: 768px) {
+        width: 90%;
+    }
+}
+.cupImage,
+.beansImage {
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+.cupImage {
+    padding: 25% 25% 0 0;
+}
+.item {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.itemIcon {
+    width: 10%;
+}
+.itemText {
+    width: 85%;
+}
+.itemHeading {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.itemParagraph {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}

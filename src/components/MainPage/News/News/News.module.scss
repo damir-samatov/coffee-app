@@ -1,0 +1,32 @@
+@import "components/variables";
+
+.news {
+    padding: 4rem 0;
+    background: url(../../Why/assets/wave.svg), $secondary;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.heading {
+    @include sectionHeading;
+}
+.button {
+    @include button2;
+    @media (max-width: 1080px) {
+        display: none;
+    }
+}
+.grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, auto);
+    @media (max-width: 1080px) {
+        display: none;
+        grid-template-columns: repeat(1, auto);
+    }
+}
