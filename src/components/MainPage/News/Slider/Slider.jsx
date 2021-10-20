@@ -4,8 +4,9 @@ import Carousel from "@brainhubeu/react-carousel";
 import Card from "../Card/Card";
 import arrowL from "../assets/arrowL.svg";
 import arrowR from "../assets/arrowR.svg";
-import { useState } from "react";
+import { useRef, useState } from "react";
 export default function Slider({ arrayOfNews }) {
+    const swiper = useRef(null);
     const [index, setIndex] = useState(0);
     return (
         <div className={s.slider}>
@@ -13,9 +14,10 @@ export default function Slider({ arrayOfNews }) {
                 {index > 0 && (
                     <button
                         className={s.arrowL}
-                        onClick={() =>
-                            setIndex((prev) => (prev > 0 ? prev - 1 : prev))
-                        }
+                        onClick={() => {
+                            swiper.current.activeIndex = 3;
+                            setIndex((prev) => (prev > 0 ? prev - 1 : prev));
+                        }}
                     >
                         <img src={arrowL} alt="" />
                     </button>

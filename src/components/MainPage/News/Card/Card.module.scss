@@ -8,11 +8,11 @@
     background-color: $void;
     box-shadow: $shadow;
     @media (max-width: 1080px) {
-        height: 100%;
+        height: auto;
         display: block;
         max-width: 40rem;
         width: 90%;
-        margin: 1rem auto;
+        margin: 2rem auto;
     }
 }
 .image {
