@@ -28,11 +28,8 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    width: 30%;
+    width: 50%;
     margin-left: auto;
-    @media (max-width: 768px) {
-        width: 50%;
-    }
 }
 .iconLink {
     width: 1.5rem;
