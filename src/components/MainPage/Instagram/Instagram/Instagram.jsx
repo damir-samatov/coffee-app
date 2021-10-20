@@ -1,6 +1,7 @@
 import s from "./Instagram.module.scss";
 import instagramIcon from "assets/instagram_icon.svg";
 import SliderDesktop from "../SliderDesktop/SliderDesktop";
+import SliderMobile from "../SliderMobile/SliderMobile";
 export default function Instagram() {
     return (
         <section className={s.instagram}>
@@ -13,6 +14,7 @@ export default function Instagram() {
                 </div>
             </div>
             <SliderDesktop />
+            <SliderMobile />
         </section>
     );
 }

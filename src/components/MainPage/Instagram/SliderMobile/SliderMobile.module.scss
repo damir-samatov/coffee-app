@@ -1,0 +1,45 @@
+@import "components/variables";
+.slider {
+    display: none;
+    padding: 4rem 0;
+    position: relative;
+    @media (max-width: 768px) {
+        display: block;
+    }
+}
+.carousel {
+    padding: 4rem 0;
+    z-index: 2;
+    position: relative;
+}
+.slide {
+    width: 100%;
+    margin: 0.5rem;
+}
+.image {
+    width: 100%;
+    aspect-ratio: 1;
+    background: #e9e9e9;
+    box-shadow: $shadow;
+    border-radius: 1rem;
+    & + & {
+        margin-top: 1rem;
+    }
+}
+
+.phones {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(50%, -50%);
+    width: 125%;
+    height: 125%;
+}
+.phone1 {
+    width: 100%;
+    height: 100%;
+    img {
+        object-fit: contain;
+        object-position: left;
+    }
+}

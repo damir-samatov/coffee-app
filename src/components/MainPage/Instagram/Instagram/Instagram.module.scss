@@ -7,6 +7,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    @media (max-width: 768px) {
+        display: block;
+    }
 }
 .heading {
     @include sectionHeading;
@@ -14,4 +17,9 @@
 .instagramIcon {
     margin-left: 2rem;
     width: 4rem;
+    @media (max-width: 768px) {
+        width: 3rem;
+        margin: 0;
+        transform: translate(0%, 150%);
+    }
 }
