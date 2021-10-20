@@ -1,24 +1,11 @@
 @import "components/variables";
-.instagram {
-    padding: 4rem 0;
-    background-image: linear-gradient($secondary 50%, $primary 50%);
-}
-.flexHeading {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.heading {
-    @include sectionHeading;
-}
-.instagramIcon {
-    margin-left: 2rem;
-    width: 4rem;
-}
-
 .slider {
+    display: block;
     padding: 4rem 0;
     position: relative;
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 .carousel {
     z-index: 2;
@@ -26,6 +13,7 @@
 }
 .slide {
     width: 100%;
+    margin: 0.5rem;
     aspect-ratio: 1/2;
 }
 .image {
@@ -35,7 +23,7 @@
     box-shadow: $shadow;
     border-radius: 1rem;
     & + & {
-        margin-top: 20px;
+        margin-top: 1rem;
     }
 }
 

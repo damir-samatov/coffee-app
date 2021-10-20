@@ -1,0 +1,17 @@
+@import "components/variables";
+.instagram {
+    padding: 4rem 0;
+    background-image: linear-gradient($secondary 50%, $primary 50%);
+}
+.flexHeading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.heading {
+    @include sectionHeading;
+}
+.instagramIcon {
+    margin-left: 2rem;
+    width: 4rem;
+}
