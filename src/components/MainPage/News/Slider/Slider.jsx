@@ -14,10 +14,9 @@ export default function Slider({ arrayOfNews }) {
                 {index > 0 && (
                     <button
                         className={s.arrowL}
-                        onClick={() => {
-                            swiper.current.activeIndex = 3;
-                            setIndex((prev) => (prev > 0 ? prev - 1 : prev));
-                        }}
+                        onClick={() =>
+                            setIndex((prev) => (prev > 0 ? prev - 1 : prev))
+                        }
                     >
                         <img src={arrowL} alt="" />
                     </button>

@@ -12,6 +12,7 @@
     padding: 3rem 0;
     background: url(./assets/wave.svg), $secondary;
     background-repeat: no-repeat;
+    background-origin: border-box;
 }
 .flex {
     display: flex;

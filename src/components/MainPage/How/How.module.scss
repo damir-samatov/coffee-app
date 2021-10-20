@@ -9,9 +9,10 @@
     padding: 8rem 0 10rem 0;
     background: url(./assets/bg_image2.png), url(./assets/wave.svg),
         url(./assets/bg_image.png);
+    background-origin: border-box;
     background-repeat: no-repeat;
     background-size: 100%, 100%, cover;
-    background-position: top, bottom, center;
+    background-position: top, bottom, bottom;
     background-attachment: local, local, fixed;
 }
 .paragraph {

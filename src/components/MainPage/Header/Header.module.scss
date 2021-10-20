@@ -5,26 +5,25 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media (orientation: landscape) {
-    }
 }
 .headerContainer {
     position: relative;
 }
 .heading {
     margin-bottom: 10vh;
-    font-size: 3rem;
+    font-size: 4.5rem;
     line-height: 1.25;
     font-weight: 900;
-    @media (max-width: 768px) {
+    @media (max-width: 420px) {
         font-size: 2.25rem;
     }
 }
 .paragraph {
+    font-size: 1.25rem;
     margin-top: 5vh;
-    max-width: 28rem;
-    @media (max-width: 768px) {
-        max-width: 18rem;
+    max-width: 30rem;
+    @media (max-width: 420px) {
+        max-width: 20rem;
     }
 }
 .cup,
@@ -57,7 +56,7 @@
 .button {
     @include button;
     padding: 1em 3em;
-    margin: 12vh 0;
+    margin: 10vh 0;
     @media (max-width: 420px) {
         width: 100%;
     }
