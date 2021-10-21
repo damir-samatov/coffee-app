@@ -22,11 +22,7 @@ html {
     @media (max-width: 384px) {
         font-size: 12px;
     }
-}
-.wrapper {
-    overflow: hidden;
-    width: 100%;
-    min-height: 100vh;
+    overflow-x: hidden;
 }
 .container {
     width: 100%;
@@ -42,5 +38,7 @@ html {
     background-color: $secondary;
     &-thumb {
         background-color: $primary;
+        border-radius: 0.25vw;
+        border: 0.005vw solid $secondary;
     }
 }
