@@ -1,0 +1,91 @@
+@import "components/variables";
+.footer {
+    background: $void;
+    background-image: url(../../assets/bg_shape_footer.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+.main {
+    display: flex;
+    align-items: flex-start;
+}
+.images {
+    width: 40%;
+    position: relative;
+}
+.cup,
+.beans {
+    width: 120%;
+    position: absolute;
+    top: -6rem;
+    left: 0;
+}
+.cup {
+    padding: 4rem;
+}
+.subscription {
+    width: 60%;
+}
+
+.heading {
+    @include sectionHeading;
+}
+.paragraph {
+    font-size: 1.2rem;
+    line-height: 1.25;
+    margin-top: 3rem;
+    max-width: 30rem;
+}
+.input {
+    margin-top: 3rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    input {
+        background-color: $grey;
+        font-size: 1.25rem;
+        width: 100%;
+        border-radius: 5rem;
+        padding: 0.75rem 12rem 0.75rem 2rem;
+    }
+}
+.button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10rem;
+    height: 100%;
+    border-radius: 5rem;
+    background-color: $primary;
+    color: $fontLight;
+}
+.agreement {
+    margin-top: 3rem;
+}
+.agreementLink {
+    display: inline;
+    color: $primary;
+}
+
+.nav {
+    padding: 1rem 2rem 3rem 2rem;
+    display: flex;
+    margin-top: 12rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 8rem;
+}
+.links {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.link {
+    font-size: 1.2rem;
+}
