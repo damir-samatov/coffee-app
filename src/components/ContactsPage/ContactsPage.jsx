@@ -2,19 +2,28 @@ import { useState } from "react";
 import s from "./ContactsPage.module.scss";
 export default function ContactsPage() {
     const [state, setState] = useState(0);
-    const contacts = state === 0 ? `${s.button} ${s.grey}` : s.button;
-    const shops = state === 1 ? `${s.button} ${s.grey}` : s.button;
+    const contacts = state === 0 ? `${s.button} ${s.disabled}` : s.button;
+    const shops = state === 1 ? `${s.button} ${s.disabled}` : s.button;
+    console.log("dwadawdaw");
     return (
         <section className={s.blog}>
             <div className={`${s.container} container`}>
                 <h5 className={s.history}>
-                    Главная <span className={s.dot}>&middot;</span> Контакты
+                    Главная <span className={s.dot}> &middot; </span> Контакты
                 </h5>
                 <div className={s.buttons}>
-                    <button className={contacts} onClick={() => setState(0)}>
+                    <button
+                        className={contacts}
+                        disabled={state === 0}
+                        onClick={() => setState(0)}
+                    >
                         Контакты
                     </button>
-                    <button className={shops} onClick={() => setState(1)}>
+                    <button
+                        className={shops}
+                        disabled={state === 1}
+                        onClick={() => setState(1)}
+                    >
                         Магазины
                     </button>
                 </div>
