@@ -10,12 +10,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 .heading {
     @include sectionHeading;
 }
 .button {
     @include button2;
+    height: fit-content;
     @media (max-width: 1080px) {
         display: none;
     }

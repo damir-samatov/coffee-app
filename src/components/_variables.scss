@@ -3,7 +3,9 @@ $secondary: #fff7e1;
 $fontDark: #000;
 $fontLight: #ffffffe1;
 $void: #fff;
-$grey: rgba(0, 0, 0, 0.05);
+$grey: #f3f3f3;
+$lightGrey: #f9f9f9;
+
 $shadow: 0px 0px 1rem 1px #00000010;
 @mixin sectionHeading {
     font-size: 2rem;
@@ -17,9 +19,17 @@ $shadow: 0px 0px 1rem 1px #00000010;
     border-radius: 0.2em;
     padding: 1em 2em;
     font-size: 1rem;
+    &:hover {
+        background-color: #e2a300;
+    }
 }
 @mixin button2 {
     display: block;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
     text-decoration: underline;
+    &:hover {
+        background-color: $lightGrey;
+        color: $primary;
+    }
 }

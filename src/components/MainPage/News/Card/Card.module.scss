@@ -48,9 +48,9 @@
     line-height: 1.25;
 }
 .button {
-    @include button;
+    @include button2;
+    text-decoration: none;
     margin-top: 2rem;
-    background-color: $void;
     color: $primary;
     @media (max-width: 1080px) {
         width: 100%;
