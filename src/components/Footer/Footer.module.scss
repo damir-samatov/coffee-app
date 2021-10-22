@@ -11,10 +11,18 @@
 .main {
     display: flex;
     align-items: flex-start;
+    position: relative;
 }
 .images {
     width: 40%;
     position: relative;
+    @media (max-width: 768px) {
+        position: absolute;
+        width: 70%;
+        right: 0;
+        top: 0;
+        transform: translate(50%);
+    }
 }
 .cup,
 .beans {
@@ -28,6 +36,10 @@
 }
 .subscription {
     width: 60%;
+    @media (max-width: 768px) {
+        width: 100%;
+        z-index: 2;
+    }
 }
 
 .heading {
@@ -42,6 +54,7 @@
 .input {
     margin-top: 3rem;
     width: 100%;
+    max-width: 35rem;
     position: relative;
     overflow: hidden;
     input {
@@ -64,6 +77,8 @@
 }
 .agreement {
     margin-top: 3rem;
+    width: 100%;
+    max-width: 40rem;
 }
 .agreementLink {
     display: inline;
@@ -71,6 +86,7 @@
 }
 
 .nav {
+    z-index: 2;
     padding: 1rem 2rem 3rem 2rem;
     display: flex;
     margin-top: 10rem;
@@ -79,12 +95,15 @@
 }
 .logo {
     width: 8rem;
+    margin-right: 2rem;
 }
 .links {
-    width: 40%;
+    width: 100%;
+    max-width: 30rem;
     display: flex;
     justify-content: space-between;
 }
 .link {
     font-size: 1.2rem;
+    padding: 1rem;
 }
