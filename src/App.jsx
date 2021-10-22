@@ -1,13 +1,23 @@
 import Nav from "components/Nav";
 import MainPage from "components/MainPage";
 import Footer from "components/Footer/Footer";
-function App() {
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import ContactsPage from "components/ContactsPage/ContactsPage";
+export default function App() {
     return (
         <div className="wrapper">
-            <Nav />
-            <MainPage />
-            <Footer />
+            <Router>
+                <Nav />
+                <Switch>
+                    <Route exact path="/">
+                        <MainPage />
+                    </Route>
+                    <Route path="/contacts">
+                        <ContactsPage />
+                    </Route>
+                </Switch>
+                <Footer />
+            </Router>
         </div>
     );
 }
-export default App;

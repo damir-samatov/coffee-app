@@ -54,7 +54,9 @@
 .input {
     margin-top: 3rem;
     width: 100%;
-    max-width: 35rem;
+    @media (max-width: 768px) {
+        max-width: 35rem;
+    }
     position: relative;
     overflow: hidden;
     input {
