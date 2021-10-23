@@ -8,6 +8,7 @@ export default function App() {
         <div className="wrapper">
             <Router>
                 <Nav />
+
                 <Switch>
                     <Route exact path="/">
                         <MainPage />
@@ -17,6 +18,14 @@ export default function App() {
                     </Route>
                 </Switch>
                 <Footer />
+                <br />
+                <br />
+                <Link to="/">HOME</Link>
+                <br />
+                <br />
+                <Link to="/contacts">CONTACTS</Link>
+                <br />
+                <br />
             </Router>
         </div>
     );
