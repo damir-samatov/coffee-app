@@ -1,7 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import s from "./ContactsPage.module.scss";
 export default function ContactsPage() {
     const [state, setState] = useState(0);
+    useEffect(() => {
+        window.scroll(0, 0);
+    }, []);
     const contacts = state === 0 ? `${s.button} ${s.disabled}` : s.button;
     const shops = state === 1 ? `${s.button} ${s.disabled}` : s.button;
     console.log("dwadawdaw");

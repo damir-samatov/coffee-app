@@ -6,7 +6,11 @@ import How from "../How/How";
 import News from "../News/News/News";
 import { mainPage } from "./MainPage.module.scss";
 import Instagram from "../Instagram/Instagram/Instagram";
+import { useEffect } from "react";
 export default function MainPage() {
+    useEffect(() => {
+        window.scroll(0, 0);
+    }, []);
     return (
         <main className={mainPage}>
             <Header />

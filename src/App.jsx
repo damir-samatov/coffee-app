@@ -6,7 +6,7 @@ import ContactsPage from "components/ContactsPage/ContactsPage";
 export default function App() {
     return (
         <div className="wrapper">
-            <Router basename="/coffee-app">
+            <Router basename="/coffee-app/#">
                 <Nav />
                 <Switch>
                     <Route exact path="/" component={MainPage} />
