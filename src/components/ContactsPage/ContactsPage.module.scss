@@ -35,7 +35,6 @@
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     @media (max-width: 750px) {
         display: block;
     }
@@ -57,10 +56,10 @@
     @media (max-width: 750px) {
         width: 100%;
         margin-top: 3rem;
+        aspect-ratio: 1;
     }
 }
 .heading {
-    margin-top: 2rem;
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -68,5 +67,10 @@
     margin-top: 0.5rem;
     & + & {
         margin-top: 0.25rem;
+    }
+}
+.item {
+    & + & {
+        margin-top: 2rem;
     }
 }
