@@ -3,11 +3,14 @@ import s from "./ContactsPage.module.scss";
 export default function ContactsPage() {
     const [state, setState] = useState(0);
     useEffect(() => {
-        window.scroll(0, 0);
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+        });
     }, []);
     const contacts = state === 0 ? `${s.button} ${s.disabled}` : s.button;
     const shops = state === 1 ? `${s.button} ${s.disabled}` : s.button;
-    console.log("dwadawdaw");
     return (
         <section className={s.blog}>
             <div className={`${s.container} container`}>
@@ -67,7 +70,7 @@ export default function ContactsPage() {
                         )}
                         {state === 1 && (
                             <>
-                                <div>
+                                <div className={s.item}>
                                     <h3 className={s.heading}>
                                         Наши магазины г. Санкт-Петербург
                                     </h3>
@@ -76,7 +79,7 @@ export default function ContactsPage() {
                                         Московский, 53
                                     </p>
                                 </div>
-                                <div>
+                                <div className={s.item}>
                                     <h3 className={s.heading}>
                                         Наши магазины Калининградская обл.
                                     </h3>

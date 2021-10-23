@@ -64,13 +64,13 @@
     font-weight: 700;
 }
 .paragraph {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     & + & {
-        margin-top: 0.25rem;
+        margin-top: 0.5rem;
     }
 }
 .item {
     & + & {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 }
