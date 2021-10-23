@@ -1,12 +1,12 @@
 import Nav from "components/Nav";
 import MainPage from "components/MainPage";
 import Footer from "components/Footer/Footer";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Switch, Link } from "react-router-dom";
 import ContactsPage from "components/ContactsPage/ContactsPage";
 export default function App() {
     return (
         <div className="wrapper">
-            <Router basename="/coffee-app/#">
+            <Router>
                 <Nav />
                 <Switch>
                     <Route exact path="/" component={MainPage} />

@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/coffee-app/static/css/main.87abfaec.chunk.css",
-    "main.js": "/coffee-app/static/js/main.8fb69050.chunk.js",
-    "main.js.map": "/coffee-app/static/js/main.8fb69050.chunk.js.map",
+    "main.js": "/coffee-app/static/js/main.6ff12a98.chunk.js",
+    "main.js.map": "/coffee-app/static/js/main.6ff12a98.chunk.js.map",
     "runtime-main.js": "/coffee-app/static/js/runtime-main.c32adc8f.js",
     "runtime-main.js.map": "/coffee-app/static/js/runtime-main.c32adc8f.js.map",
     "static/css/2.dab86632.chunk.css": "/coffee-app/static/css/2.dab86632.chunk.css",
-    "static/js/2.8bf33bd4.chunk.js": "/coffee-app/static/js/2.8bf33bd4.chunk.js",
-    "static/js/2.8bf33bd4.chunk.js.map": "/coffee-app/static/js/2.8bf33bd4.chunk.js.map",
+    "static/js/2.2bd115a3.chunk.js": "/coffee-app/static/js/2.2bd115a3.chunk.js",
+    "static/js/2.2bd115a3.chunk.js.map": "/coffee-app/static/js/2.2bd115a3.chunk.js.map",
     "index.html": "/coffee-app/index.html",
     "static/css/2.dab86632.chunk.css.map": "/coffee-app/static/css/2.dab86632.chunk.css.map",
     "static/css/main.87abfaec.chunk.css.map": "/coffee-app/static/css/main.87abfaec.chunk.css.map",
-    "static/js/2.8bf33bd4.chunk.js.LICENSE.txt": "/coffee-app/static/js/2.8bf33bd4.chunk.js.LICENSE.txt",
+    "static/js/2.2bd115a3.chunk.js.LICENSE.txt": "/coffee-app/static/js/2.2bd115a3.chunk.js.LICENSE.txt",
     "static/media/arrowL.bf802f77.svg": "/coffee-app/static/media/arrowL.bf802f77.svg",
     "static/media/arrowR.3e39b3bf.svg": "/coffee-app/static/media/arrowR.3e39b3bf.svg",
     "static/media/arrow_left.e4eb7ad8.svg": "/coffee-app/static/media/arrow_left.e4eb7ad8.svg",
@@ -53,8 +53,8 @@
   "entrypoints": [
     "static/js/runtime-main.c32adc8f.js",
     "static/css/2.dab86632.chunk.css",
-    "static/js/2.8bf33bd4.chunk.js",
+    "static/js/2.2bd115a3.chunk.js",
     "static/css/main.87abfaec.chunk.css",
-    "static/js/main.8fb69050.chunk.js"
+    "static/js/main.6ff12a98.chunk.js"
   ]
 }
