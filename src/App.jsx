@@ -6,16 +6,11 @@ import ContactsPage from "components/ContactsPage/ContactsPage";
 export default function App() {
     return (
         <div className="wrapper">
-            <Router>
+            <Router basename="/">
                 <Nav />
-
                 <Switch>
-                    <Route exact path="/">
-                        <MainPage />
-                    </Route>
-                    <Route path="/contacts">
-                        <ContactsPage />
-                    </Route>
+                    <Route exact path="/" component={MainPage} />
+                    <Route path="/contacts" component={ContactsPage} />
                 </Switch>
                 <Footer />
                 <br />
