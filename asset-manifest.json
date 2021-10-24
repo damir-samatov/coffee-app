@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/coffee-app/static/css/main.87abfaec.chunk.css",
-    "main.js": "/coffee-app/static/js/main.6ff12a98.chunk.js",
-    "main.js.map": "/coffee-app/static/js/main.6ff12a98.chunk.js.map",
+    "main.css": "/coffee-app/static/css/main.8dfaa8f6.chunk.css",
+    "main.js": "/coffee-app/static/js/main.9021a086.chunk.js",
+    "main.js.map": "/coffee-app/static/js/main.9021a086.chunk.js.map",
     "runtime-main.js": "/coffee-app/static/js/runtime-main.c32adc8f.js",
     "runtime-main.js.map": "/coffee-app/static/js/runtime-main.c32adc8f.js.map",
     "static/css/2.dab86632.chunk.css": "/coffee-app/static/css/2.dab86632.chunk.css",
-    "static/js/2.2bd115a3.chunk.js": "/coffee-app/static/js/2.2bd115a3.chunk.js",
-    "static/js/2.2bd115a3.chunk.js.map": "/coffee-app/static/js/2.2bd115a3.chunk.js.map",
+    "static/js/2.28903369.chunk.js": "/coffee-app/static/js/2.28903369.chunk.js",
+    "static/js/2.28903369.chunk.js.map": "/coffee-app/static/js/2.28903369.chunk.js.map",
     "index.html": "/coffee-app/index.html",
     "static/css/2.dab86632.chunk.css.map": "/coffee-app/static/css/2.dab86632.chunk.css.map",
-    "static/css/main.87abfaec.chunk.css.map": "/coffee-app/static/css/main.87abfaec.chunk.css.map",
-    "static/js/2.2bd115a3.chunk.js.LICENSE.txt": "/coffee-app/static/js/2.2bd115a3.chunk.js.LICENSE.txt",
+    "static/css/main.8dfaa8f6.chunk.css.map": "/coffee-app/static/css/main.8dfaa8f6.chunk.css.map",
+    "static/js/2.28903369.chunk.js.LICENSE.txt": "/coffee-app/static/js/2.28903369.chunk.js.LICENSE.txt",
     "static/media/arrowL.bf802f77.svg": "/coffee-app/static/media/arrowL.bf802f77.svg",
     "static/media/arrowR.3e39b3bf.svg": "/coffee-app/static/media/arrowR.3e39b3bf.svg",
     "static/media/arrow_left.e4eb7ad8.svg": "/coffee-app/static/media/arrow_left.e4eb7ad8.svg",
@@ -23,7 +23,6 @@
     "static/media/How.module.scss": "/coffee-app/static/media/wave.acb24f77.svg",
     "static/media/MainPage.module.scss": "/coffee-app/static/media/bg_shape3.06fdf64f.png",
     "static/media/Footer.module.scss": "/coffee-app/static/media/bg_shape_footer.4610d0c8.svg",
-    "static/media/burger_icon.b4523991.svg": "/coffee-app/static/media/burger_icon.b4523991.svg",
     "static/media/busket_icon.d824553b.svg": "/coffee-app/static/media/busket_icon.d824553b.svg",
     "static/media/card_item1.0f1734f3.png": "/coffee-app/static/media/card_item1.0f1734f3.png",
     "static/media/card_item2.6368fa64.png": "/coffee-app/static/media/card_item2.6368fa64.png",
@@ -36,7 +35,6 @@
     "static/media/cup.69abac67.png": "/coffee-app/static/media/cup.69abac67.png",
     "static/media/cup_icon.69bf2ef6.svg": "/coffee-app/static/media/cup_icon.69bf2ef6.svg",
     "static/media/discount_item.b1af33a6.png": "/coffee-app/static/media/discount_item.b1af33a6.png",
-    "static/media/exit_icon.c36c3788.svg": "/coffee-app/static/media/exit_icon.c36c3788.svg",
     "static/media/instagram_icon.a91299e2.svg": "/coffee-app/static/media/instagram_icon.a91299e2.svg",
     "static/media/logo.5934eadd.svg": "/coffee-app/static/media/logo.5934eadd.svg",
     "static/media/news_image.37f68cb3.png": "/coffee-app/static/media/news_image.37f68cb3.png",
@@ -53,8 +51,8 @@
   "entrypoints": [
     "static/js/runtime-main.c32adc8f.js",
     "static/css/2.dab86632.chunk.css",
-    "static/js/2.2bd115a3.chunk.js",
-    "static/css/main.87abfaec.chunk.css",
-    "static/js/main.6ff12a98.chunk.js"
+    "static/js/2.28903369.chunk.js",
+    "static/css/main.8dfaa8f6.chunk.css",
+    "static/js/main.9021a086.chunk.js"
   ]
 }
