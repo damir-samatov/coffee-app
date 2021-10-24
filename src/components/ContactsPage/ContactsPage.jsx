@@ -113,7 +113,7 @@ export default function ContactsPage() {
                             className={s.iframe}
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147512.34638816933!2d20.324445981629722!3d54.711727095407596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e33d8d4b7c21a9%3A0x5050960016126ed3!2z0JrQsNC70LjQvdC40L3Qs9GA0LDQtCwg0JrQsNC70LjQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjw!5e0!3m2!1sru!2s!4v1634923203998!5m2!1sru!2s"
                             loading="lazy"
-                            allowFullScreen="false"
+                            allowFullScreen={false}
                         ></iframe>
                     </div>
                 </div>

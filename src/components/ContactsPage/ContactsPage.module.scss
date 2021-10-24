@@ -47,11 +47,13 @@
 }
 .map {
     width: 58%;
-    background-color: lightblue;
     aspect-ratio: 16/9;
+
     .iframe {
         width: 100%;
         height: 100%;
+        border: none;
+        border-radius: 5px;
     }
     @media (max-width: 750px) {
         width: 100%;

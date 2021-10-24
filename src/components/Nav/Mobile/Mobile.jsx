@@ -3,7 +3,6 @@ import logoIcon from "../../../assets/logo.svg";
 import searchIcon from "../../../assets/search_icon.svg";
 import busketIcon from "../../../assets/busket_icon.svg";
 import personIcon from "../../../assets/person_icon.svg";
-import burgerIcon from "../../../assets/burger_icon.svg";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import SearchMobile from "../SearchMobile/SearchMobile";
 import s from "./Mobile.module.scss";
@@ -16,7 +15,9 @@ export default function NavMobile() {
                 className={s.button}
                 onClick={() => setBurgerMenuShown(true)}
             >
-                <img src={burgerIcon} alt="burger button" />
+                <span className={s.line}></span>
+                <span className={s.line}></span>
+                <span className={s.line}></span>
             </button>
             <div className={s.logo}>
                 <img src={logoIcon} alt="logo" />
