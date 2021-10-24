@@ -2,9 +2,13 @@ import s from "./Footer.module.scss";
 import cupImg from "assets/cup.png";
 import beansImg from "assets/beans.png";
 import logoImg from "assets/logo.svg";
+import { Link, useLocation } from "react-router-dom";
 export default function Footer() {
+    const route = useLocation().pathname;
+    const className =
+        route === "/contacts" ? `${s.footer} ${s.footer2}` : s.footer;
     return (
-        <section className={s.footer}>
+        <section className={className}>
             <div className={`${s.container} container`}>
                 <div className={s.main}>
                     <div className={s.subscription}>
@@ -42,15 +46,15 @@ export default function Footer() {
                         <img src={logoImg} alt="logo" />
                     </div>
                     <div className={s.links}>
-                        <a className={s.link} href="#">
+                        <Link className={s.Link} to="/">
                             Каталог товаров
-                        </a>
-                        <a className={s.link} href="#">
+                        </Link>
+                        <Link className={s.Link} to="/">
                             Блог
-                        </a>
-                        <a className={s.link} href="#">
+                        </Link>
+                        <Link className={s.Link} to="/contacts">
                             Контакты
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

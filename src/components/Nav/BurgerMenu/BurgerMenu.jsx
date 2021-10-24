@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 export default function BurgerMenu({ setBurgerMenuShown }) {
     const [burgerClassName, setBurgerClassName] = useState(s.burgerMenu);
     const handleBurgerClose = () => {
+        window.scroll(0, 0);
         setBurgerClassName(`${s.burgerMenu} ${s.close}`);
         setTimeout(() => {
             setBurgerMenuShown(false);

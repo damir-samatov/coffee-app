@@ -13,14 +13,6 @@ export default function App() {
                     <Route path="/contacts" component={ContactsPage} />
                 </Switch>
                 <Footer />
-                <br />
-                <br />
-                <Link to="/">HOME</Link>
-                <br />
-                <br />
-                <Link to="/contacts">CONTACTS</Link>
-                <br />
-                <br />
             </Router>
         </div>
     );

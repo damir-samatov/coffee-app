@@ -5,6 +5,7 @@ import personIcon from "../../../assets/person_icon.svg";
 import { useState } from "react";
 import SearchDesktop from "../SearchDesktop/SearchDesktop";
 import s from "./Desktop.module.scss";
+import { Link } from "react-router-dom";
 export default function Desktop() {
     const [searchInputShown, setSearchInputShown] = useState(false);
     const handleInputClose = () => {
@@ -23,15 +24,15 @@ export default function Desktop() {
                     <img src={logoIcon} alt="logo" />
                 </div>
                 <div className={s.textLinks}>
-                    <a className={s.textLink} href="#">
+                    <Link className={s.textLink} to="/">
                         Каталог товаров
-                    </a>
-                    <a className={s.textLink} href="#">
+                    </Link>
+                    <Link className={s.textLink} to="/">
                         Блог
-                    </a>
-                    <a className={s.textLink} href="#">
+                    </Link>
+                    <Link className={s.textLink} to="/contacts">
                         Контакты
-                    </a>
+                    </Link>
                     {searchInputShown && (
                         <SearchDesktop inputLostFocus={inputLostFocus} />
                     )}

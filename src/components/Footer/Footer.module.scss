@@ -1,11 +1,16 @@
 @import "components/variables";
 .footer {
     background: $void;
-    background-image: url(../../assets/bg_shape_footer.svg);
+    background-image: url(../../assets/bg_primary_top.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     padding-top: 6rem;
     overflow-x: hidden;
+    &.footer2 {
+        background-image: url(../../assets/bg_secondary_top.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
 }
 
 .main {
