@@ -17,13 +17,12 @@
 }
 .burgerMenu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     color: $fontDark;
     position: fixed;
     width: 100%;
     height: 100vh;
-    padding: 2vh 0;
     top: 0;
     left: 0;
     transform: translateX(-100%);
@@ -37,42 +36,69 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 1rem;
 }
 .logo {
-    width: 10rem;
+    width: 8rem;
 }
-.buttonClose {
-    width: 2.5rem;
+.button {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    &::after,
+    &::before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        border-radius: 2px;
+        background-color: black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::before {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
 }
-.textLink {
-    font-size: 1.5rem;
-    padding: 1em;
-    margin-left: 20%;
+.links {
     width: fit-content;
-    margin-top: 0.5em;
+    margin: 0 auto;
+}
+.link {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    margin-top: 1rem;
 }
 .iconLinks {
     display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 3rem;
 }
 .iconLink {
-    font-size: 1.5rem;
-    padding: 1em;
-    margin-left: 20%;
-    margin-top: 1rem;
+    width: 5rem;
+    padding: 1.5rem;
     & + & {
-        margin-left: 1.25rem;
+        margin-left: 2rem;
     }
 }
 .socialLinks {
-    margin: 5vh 0;
+    margin-bottom: 1rem;
 }
 .socialLinksContainer {
-    margin-top: 1rem;
     display: flex;
     justify-content: center;
+    width: fit-content;
+    margin: 1rem auto 0;
 }
 .socialLink {
     padding: 1rem;
+    margin: 0 1rem 0 0;
+    & + & {
+        margin: 0 0 0 1rem;
+    }
 }
 .socialLinkText {
     font-size: 1.5rem;

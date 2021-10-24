@@ -1,11 +1,11 @@
 import { useState } from "react";
 import logoIcon from "../../../assets/logo.svg";
-import exitIcon from "../../../assets/exit_icon.svg";
 import busketIcon from "../../../assets/busket_icon.svg";
 import personIcon from "../../../assets/person_icon.svg";
 import phoneIcon from "../../../assets/phone_icon.svg";
 import instagramIcon from "../../../assets/instagram_icon.svg";
 import s from "./BurgerMenu.module.scss";
+import { Link } from "react-router-dom";
 export default function BurgerMenu({ setBurgerMenuShown }) {
     const [burgerClassName, setBurgerClassName] = useState(s.burgerMenu);
     const handleBurgerClose = () => {
@@ -20,29 +20,35 @@ export default function BurgerMenu({ setBurgerMenuShown }) {
                 <div className={s.logo}>
                     <img src={logoIcon} alt="logo" />
                 </div>
-                <button className={s.buttonClose} onClick={handleBurgerClose}>
-                    <img src={exitIcon} alt="exit button" />
-                </button>
+                <button
+                    className={s.button}
+                    onClick={handleBurgerClose}
+                ></button>
             </div>
-            <div className={s.textLinks}>
-                <a className={s.textLink} href="#">
+            <div className={s.links}>
+                <Link className={s.link} to="/" onClick={handleBurgerClose}>
                     Каталог товаров
-                </a>
-                <a className={s.textLink} href="#">
+                </Link>
+                <Link className={s.link} to="/" onClick={handleBurgerClose}>
                     Блог
-                </a>
-                <a className={s.textLink} href="#">
+                </Link>
+                <Link
+                    className={s.link}
+                    to="/contacts"
+                    onClick={handleBurgerClose}
+                >
                     Контакты
-                </a>
+                </Link>
+                <div className={s.iconLinks}>
+                    <a className={s.iconLink} href="#">
+                        <img src={busketIcon} alt="busket icon" />
+                    </a>
+                    <a className={s.iconLink} href="#">
+                        <img src={personIcon} alt="person icon" />
+                    </a>
+                </div>
             </div>
-            <div className={s.iconLinks}>
-                <a className={s.iconLink} href="#">
-                    <img src={busketIcon} alt="busket icon" />
-                </a>
-                <a className={s.iconLink} href="#">
-                    <img src={personIcon} alt="person icon" />
-                </a>
-            </div>
+
             <div className={s.socialLinks}>
                 <a className={s.socialLinkText} href="#">
                     Import@kldrefine.com
