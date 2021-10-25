@@ -16,10 +16,8 @@ export default function App() {
                     <Route path="/contacts">
                         <ContactsPage />
                     </Route>
-                    <Route path="/blog">
-                        <BlogPage />
-                    </Route>
                 </Switch>
+                <BlogPage />
                 <Footer />
             </Router>
         </div>
