@@ -1,13 +1,7 @@
-import { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import s from "./BlogPage.module.scss";
 import icons from "./icons";
 export default function BlogPage() {
-    const [activeIndex, setActiveIndex] = useState(0);
-    console.log("general render");
-    const iconClickHandler = (i) => {
-        setActiveIndex(i);
-    };
     useEffect(() => {
         window.scroll({
             top: 0,
@@ -15,6 +9,11 @@ export default function BlogPage() {
             behavior: "smooth",
         });
     }, []);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const iconClickHandler = (i) => {
+        setActiveIndex(i);
+    };
+
     return (
         <section className={s.blog}>
             <div className={`${s.container} container`}>
