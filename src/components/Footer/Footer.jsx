@@ -3,10 +3,23 @@ import cupImg from "assets/cup.png";
 import beansImg from "assets/beans.png";
 import logoImg from "assets/logo.svg";
 import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 export default function Footer() {
     const route = useLocation().pathname;
-    const className =
-        route === "/contacts" ? `${s.footer} ${s.footer2}` : s.footer;
+    const [className, setClassName] = useState(s.footer);
+    useEffect(() => {
+        switch (route) {
+            case "/contacts":
+                setClassName(`${s.footer} ${s.contacts}`);
+                break;
+            case "/blog":
+                setClassName(`${s.footer} ${s.blog}`);
+                break;
+            default:
+                setClassName(s.footer);
+                break;
+        }
+    }, [route]);
     return (
         <section className={className}>
             <div className={`${s.container} container`}>
@@ -49,7 +62,7 @@ export default function Footer() {
                         <Link className={s.link} to="/">
                             Каталог товаров
                         </Link>
-                        <Link className={s.link} to="/">
+                        <Link className={s.link} to="/blog">
                             Блог
                         </Link>
                         <Link className={s.link} to="/contacts">

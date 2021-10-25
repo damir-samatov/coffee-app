@@ -12,7 +12,7 @@ export default function ContactsPage() {
     const contacts = state === 0 ? `${s.button} ${s.disabled}` : s.button;
     const shops = state === 1 ? `${s.button} ${s.disabled}` : s.button;
     return (
-        <section className={s.blog}>
+        <section className={s.contacts}>
             <div className={`${s.container} container`}>
                 <h5 className={s.history}>
                     Главная <span className={s.dot}> &middot; </span> Контакты

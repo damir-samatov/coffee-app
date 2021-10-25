@@ -11,6 +11,12 @@ $shadow: 0px 0px 1rem 1px #00000010;
     font-size: 2rem;
     font-weight: 900;
 }
+@mixin subPage {
+    padding: 5rem 0 8rem 0;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 @mixin button {
     background-color: $primary;
     color: $fontLight;

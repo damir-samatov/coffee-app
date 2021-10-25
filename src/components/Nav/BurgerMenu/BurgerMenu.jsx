@@ -30,7 +30,7 @@ export default function BurgerMenu({ setBurgerMenuShown }) {
                 <Link className={s.link} to="/" onClick={handleBurgerClose}>
                     Каталог товаров
                 </Link>
-                <Link className={s.link} to="/" onClick={handleBurgerClose}>
+                <Link className={s.link} to="/blog" onClick={handleBurgerClose}>
                     Блог
                 </Link>
                 <Link

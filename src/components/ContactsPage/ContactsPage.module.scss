@@ -1,10 +1,7 @@
 @import "components/variables";
-.blog {
-    padding: 5rem 0 8rem 0;
+.contacts {
     background: url(../../assets/bg_bottom_secondary.svg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include subPage;
 }
 .history {
     font-weight: 700;
@@ -23,7 +20,7 @@
     width: 49%;
     @media (max-width: 500px) {
         & + & {
-            margin-top: 1rem;
+            margin-top: 2%;
         }
         width: 100%;
     }

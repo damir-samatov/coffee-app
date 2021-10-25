@@ -27,7 +27,7 @@ export default function Desktop() {
                     <Link className={s.textLink} to="/">
                         Каталог товаров
                     </Link>
-                    <Link className={s.textLink} to="/">
+                    <Link className={s.textLink} to="/blog">
                         Блог
                     </Link>
                     <Link className={s.textLink} to="/contacts">

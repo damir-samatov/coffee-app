@@ -1,0 +1,30 @@
+@import "components/variables";
+.blog {
+    @include subPage;
+}
+.history {
+    font-weight: 700;
+}
+.dot {
+    font-weight: 900;
+}
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+.button {
+    @include button3;
+    width: 32%;
+    @media (max-width: 500px) {
+        width: 100%;
+        & + & {
+            margin-top: 2%;
+            width: 49%;
+        }
+    }
+}
+.main {
+    margin-top: 2.5rem;
+}
