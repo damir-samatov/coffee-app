@@ -23,7 +23,7 @@
     position: relative;
     @media (max-width: 768px) {
         position: absolute;
-        width: 70%;
+        width: 75%;
         right: 0;
         top: 0;
         transform: translate(30%);
@@ -59,9 +59,6 @@
 .input {
     margin-top: 3rem;
     width: 100%;
-    @media (max-width: 768px) {
-        max-width: 35rem;
-    }
     position: relative;
     overflow: hidden;
     input {
@@ -69,7 +66,11 @@
         font-size: 1.25rem;
         width: 100%;
         border-radius: 5rem;
-        padding: 0.75rem 12rem 0.75rem 2rem;
+        padding: 1rem 12rem 1rem 2rem;
+        @media (max-width: 768px) {
+            padding: 1rem 2rem;
+            border-radius: 0.25rem;
+        }
     }
 }
 .button {
@@ -81,6 +82,13 @@
     width: 10rem;
     height: 100%;
     border-radius: 5rem;
+    @media (max-width: 768px) {
+        @include button;
+        position: static;
+        transform: translateY(0);
+        width: 100%;
+        margin-top: 1rem;
+    }
 }
 .agreement {
     margin-top: 3rem;
@@ -94,23 +102,38 @@
 
 .nav {
     z-index: 2;
-    padding: 1rem 2rem 3rem 2rem;
+    padding: 1rem 1rem 3rem 1rem;
     display: flex;
     margin-top: 10rem;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    @media (max-width: 768px) {
+        margin-top: 5rem;
+        flex-wrap: wrap;
+    }
 }
 .logo {
     width: 8rem;
     margin-right: 2rem;
+    @media (max-width: 768px) {
+        order: 2;
+        margin: 2rem auto auto;
+    }
 }
 .links {
     width: 100%;
     max-width: 30rem;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 768px) {
+        max-width: none;
+        order: 1;
+    }
 }
 .link {
-    font-size: 1.2rem;
-    padding: 1rem;
+    padding: 1em;
+    font-size: 1.25rem;
+    @media (max-width: 400px) {
+        font-size: 1.1rem;
+    }
 }

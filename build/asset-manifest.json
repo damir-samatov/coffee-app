@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/coffee-app/static/css/main.99a8bac8.chunk.css",
+    "main.css": "/coffee-app/static/css/main.108ba984.chunk.css",
     "main.js": "/coffee-app/static/js/main.a99df643.chunk.js",
     "main.js.map": "/coffee-app/static/js/main.a99df643.chunk.js.map",
     "runtime-main.js": "/coffee-app/static/js/runtime-main.c32adc8f.js",
@@ -10,7 +10,7 @@
     "static/js/2.e97a2721.chunk.js.map": "/coffee-app/static/js/2.e97a2721.chunk.js.map",
     "index.html": "/coffee-app/index.html",
     "static/css/2.dab86632.chunk.css.map": "/coffee-app/static/css/2.dab86632.chunk.css.map",
-    "static/css/main.99a8bac8.chunk.css.map": "/coffee-app/static/css/main.99a8bac8.chunk.css.map",
+    "static/css/main.108ba984.chunk.css.map": "/coffee-app/static/css/main.108ba984.chunk.css.map",
     "static/js/2.e97a2721.chunk.js.LICENSE.txt": "/coffee-app/static/js/2.e97a2721.chunk.js.LICENSE.txt",
     "static/media/arrowL.bf802f77.svg": "/coffee-app/static/media/arrowL.bf802f77.svg",
     "static/media/arrowR.3e39b3bf.svg": "/coffee-app/static/media/arrowR.3e39b3bf.svg",
@@ -52,7 +52,7 @@
     "static/js/runtime-main.c32adc8f.js",
     "static/css/2.dab86632.chunk.css",
     "static/js/2.e97a2721.chunk.js",
-    "static/css/main.99a8bac8.chunk.css",
+    "static/css/main.108ba984.chunk.css",
     "static/js/main.a99df643.chunk.js"
   ]
 }

@@ -46,13 +46,13 @@ export default function Footer() {
                         <img src={logoImg} alt="logo" />
                     </div>
                     <div className={s.links}>
-                        <Link className={s.Link} to="/">
+                        <Link className={s.link} to="/">
                             Каталог товаров
                         </Link>
-                        <Link className={s.Link} to="/">
+                        <Link className={s.link} to="/">
                             Блог
                         </Link>
-                        <Link className={s.Link} to="/contacts">
+                        <Link className={s.link} to="/contacts">
                             Контакты
                         </Link>
                     </div>

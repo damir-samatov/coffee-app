@@ -14,21 +14,19 @@
 }
 .buttons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 2.5rem;
 }
 .button {
+    @include button3;
     width: 49%;
-    padding: 0.5rem 1rem;
-    font-weight: 700;
-    border-radius: 0.25rem;
-    background-color: $secondary;
-    border: 0.2rem solid $primary;
-    color: $primary;
-}
-.disabled {
-    background-color: $grey;
-    border: 0.2rem solid grey;
+    @media (max-width: 500px) {
+        & + & {
+            margin-top: 1rem;
+        }
+        width: 100%;
+    }
 }
 
 .main {
