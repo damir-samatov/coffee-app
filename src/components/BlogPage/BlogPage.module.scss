@@ -1,6 +1,7 @@
 @import "components/variables";
 .blog {
     @include subPage;
+    padding-bottom: 4rem;
 }
 .history {
     font-weight: 700;
@@ -17,7 +18,7 @@
 .button {
     @include button3;
     width: 32%;
-    @media (max-width: 500px) {
+    @media (max-width: 600px) {
         width: 100%;
         & + & {
             margin-top: 2%;
@@ -27,4 +28,70 @@
 }
 .main {
     margin-top: 2.5rem;
+}
+.heading {
+    @include sectionHeading2;
+}
+.paragraph {
+    margin-top: 2.5rem;
+    font-size: 1.2rem;
+    line-height: 1.35;
+}
+.icons {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media (max-width: 1024px) {
+        aspect-ratio: 2/1;
+        display: grid;
+        grid-template-columns: repeat(4, 22%);
+        column-gap: 4%;
+        row-gap: 8%;
+    }
+    @media (max-width: 576px) {
+        aspect-ratio: 1;
+        display: grid;
+        grid-template-columns: repeat(3, 32%);
+        gap: 2%;
+    }
+}
+.icon {
+    cursor: pointer;
+    .name {
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-top: 15%;
+    }
+    .image {
+        height: 50%;
+        aspect-ratio: 1;
+        margin: 0 auto;
+        svg {
+            display: block;
+            height: 75%;
+            margin: 0 auto;
+            fill: black;
+        }
+    }
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+    width: 11%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    aspect-ratio: 1;
+    border-radius: 10%;
+    box-shadow: $shadow;
+    &.active {
+        background-color: $primary;
+        .name {
+            color: $fontLight;
+        }
+        svg {
+            fill: $fontLight;
+        }
+    }
 }
