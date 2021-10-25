@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/coffee-app/static/css/main.d70be3d7.chunk.css",
-    "main.js": "/coffee-app/static/js/main.05a36170.chunk.js",
-    "main.js.map": "/coffee-app/static/js/main.05a36170.chunk.js.map",
+    "main.js": "/coffee-app/static/js/main.bee28719.chunk.js",
+    "main.js.map": "/coffee-app/static/js/main.bee28719.chunk.js.map",
     "runtime-main.js": "/coffee-app/static/js/runtime-main.c32adc8f.js",
     "runtime-main.js.map": "/coffee-app/static/js/runtime-main.c32adc8f.js.map",
     "static/css/2.dab86632.chunk.css": "/coffee-app/static/css/2.dab86632.chunk.css",
@@ -53,6 +53,6 @@
     "static/css/2.dab86632.chunk.css",
     "static/js/2.412c497a.chunk.js",
     "static/css/main.d70be3d7.chunk.css",
-    "static/js/main.05a36170.chunk.js"
+    "static/js/main.bee28719.chunk.js"
   ]
 }
