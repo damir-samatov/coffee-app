@@ -41,7 +41,10 @@ export default function BlogPage() {
                                                 ? `${s.icon} ${s.active}`
                                                 : s.icon
                                         }
-                                        onClick={() => iconClickHandler(i)}
+                                        onClick={() => {
+                                            i !== activeIndex &&
+                                                iconClickHandler(i);
+                                        }}
                                     >
                                         <h6 className={s.name}>{item.name}</h6>
                                         <div className={s.image}>
