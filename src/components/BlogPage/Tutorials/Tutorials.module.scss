@@ -1,36 +1,9 @@
 @import "components/variables";
-.blog {
-    @include subPage;
-    padding-bottom: 4rem;
-}
-.history {
-    font-weight: 700;
-}
-.dot {
-    font-weight: 900;
-}
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 2.5rem;
-}
-.button {
-    @include button3;
-    width: 32%;
-    @media (max-width: 600px) {
-        width: 100%;
-        & + & {
-            margin-top: 2%;
-            width: 49%;
-        }
-    }
-}
-.main {
-    margin-top: 2.5rem;
-}
 .heading {
     @include sectionHeading2;
+}
+.info {
+    margin-top: 2.5rem;
 }
 .paragraph {
     margin-top: 2.5rem;
@@ -85,7 +58,7 @@
     aspect-ratio: 1;
     border-radius: 10%;
     box-shadow: $shadow;
-    transition: background-color 0.25s linear;
+    transition: 0.25s linear;
     .name {
         transition: color 0.25s linear;
     }
